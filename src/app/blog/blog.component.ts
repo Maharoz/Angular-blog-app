@@ -26,8 +26,11 @@ img="https://placeimg.com/40/40/people";
 
 onClickSubmit(topic : HTMLInputElement){
 //console.log(topic.value);
-(this.form.get('topics') as FormArray).insert(0,new FormControl(topic.value));
-topic.value ='';
+if(topic.value != "" )
+{
+  (this.topics as FormArray).insert(0,new FormControl(topic.value));
+  topic.value ='';
+}
 
   }
 
