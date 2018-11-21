@@ -34,7 +34,7 @@
   *ngFor="let topic of form.get('topics').controls"
    class="list-group-item"   
    style="margin-top: 10px;width:50%;margin-left:25%;height: auto;">
-   <i class="fa fa-trash" aria-hidden="true"></i><br>
+   <i class="fa fa-trash" aria-hidden="true" (click)="onClickRemove(topic)"></i><br>
    <img src="https://placeimg.com/40/40/people" style="border-radius: 50%;">
   {{ topic.value }} 
   </li>

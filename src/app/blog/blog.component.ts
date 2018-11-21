@@ -25,10 +25,15 @@ form = new FormGroup({
 img="https://placeimg.com/40/40/people";
 
 onClickSubmit(topic : HTMLInputElement){
-console.log(topic.value);
+//console.log(topic.value);
 (this.form.get('topics') as FormArray).insert(0,new FormControl(topic.value));
 topic.value ='';
 
+  }
+
+  onClickRemove(topic:FormControl){
+      let index = this.topics.controls.indexOf(topic);
+      this.topics.removeAt(index);
   }
   constructor() {
     
@@ -36,6 +41,10 @@ topic.value ='';
 
   ngOnInit() {
    
+  }
+
+  get topics(){
+    return this.form.get('topics') as FormArray;
   }
 
 }
