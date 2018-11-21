@@ -46,7 +46,12 @@
    </div>  
   {{ topic.value }} <br>
 
-  <i class="fa fa-heart" style="color: red"></i> 
+  
+  <p style="color:red ; font-family: sans-serif;font-size: 20px" *ngIf="isFavorite" (click)="onClickLove(topic)">Love</p>
+  <div style="width: 55px;">
+    <p style="color:white ; font-family: sans-serif;font-size: 20px;background-color: red;" *ngIf="!isFavorite" (click)="onClickLove(topic)">Loved</p>
+  </div>
+ 
   </li>
 </div>
 </ul>
