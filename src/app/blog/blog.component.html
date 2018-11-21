@@ -1,6 +1,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+
+
+
+
 <ul class="nav navbar-light bg-light nav-prop">
   <li class="nav-item">
     <a class="nav-link active nav-el-prop" href="#">Home</a>
@@ -14,16 +18,18 @@
 </ul>
 
 
+    <div class="row">
+      <div class="col-md-8">
 <form>
   <div class="form-group" style="font-family: sans-serif ; font-size: 18; font-weight: bold;margin-top:50px">
 
-    <img style="margin-left: 25% ;margin-bottom: 5px;border-radius: 50%;" src="https://placeimg.com/40/40/people"/>
-    <textarea class="form-control" placeholder="Please write something" rows="5" #topic style="width:50%;margin-left:25%"></textarea>
+    <img style="margin-left: 10% ;margin-bottom: 5px;border-radius: 50%;" src="https://placeimg.com/40/40/people"/>
+    <textarea class="form-control" placeholder="Please write something" rows="5" #topic style="width:75%;margin-left:10%"></textarea>
   </div>
  
 </form>
 
-<button type="Post" class="btn btn-primary"  style="margin-left: 25%;width:200px" (click)="onClickSubmit(topic)" >Post</button>
+<button type="Post" class="btn btn-primary"  style="margin-left: 10%;width:200px" (click)="onClickSubmit(topic)" >Post</button>
 
 
 <ul class="list-group">
@@ -33,7 +39,7 @@
   
   *ngFor="let topic of form.get('topics').controls"
    class="list-group-item"   
-   style="margin-top: 10px;width:50%;margin-left:25%;height: auto;">
+   style="margin-top: 10px;width:75%;margin-left:10%;height: auto;">
    <div>
     <img src="https://placeimg.com/40/40/people" style="border-radius: 50%;">
     <i class="fa fa-trash" (click)="onClickRemove(topic)"></i><br>
@@ -42,3 +48,24 @@
   </li>
 </div>
 </ul>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="hashTag-Area">
+            <h3 class="hashTag-header">#HashTags</h3>
+
+            <ul class="list-group">
+                <li class="list-group-item" ><a href="">#meToo</a></li>
+                <li class="list-group-item" ><a href="">#goTigers</a></li>
+                <li class="list-group-item" ><a href="">#weekend</a></li>
+                <li class="list-group-item" ><a href="">#love</a></li>
+                <li class="list-group-item" ><a href="">#peace</a></li>
+                <li class="list-group-item" ><a href="">#fun</a></li>
+                <li class="list-group-item" ><a href="">#happiness</a></li>
+            </ul>
+        </div>
+      </div>
+
+</div>
+
