@@ -6,7 +6,7 @@
     <a class="nav-link active nav-el-prop" href="#">Home</a>
   </li>
   <li class="nav-item img-settings-prop">
-    <a class="nav-link nav-el-prop " href="#"><a href="https://imgbb.com/"><img src="https://image.ibb.co/n4nbzq/angular.png" alt="angular" style="border-radius: 50%; height: 50px;;"></a></a>
+    <a class="nav-link " href="#"><a href="https://imgbb.com/"><img src="https://image.ibb.co/n4nbzq/angular.png" alt="angular" style="border-radius: 50%; height: 50px;;"></a></a>
   </li>
   <li class="nav-item" style=" margin-left:auto; width: 100px;">
     <a class="nav-link nav-el-prop"  href="#"><i class="fa fa-cog" style="font-size : 30px;" ></i></a>
@@ -32,8 +32,9 @@
   <li
   
   *ngFor="let topic of form.get('topics').controls"
-   class="list-group-item"
+   class="list-group-item"   
    style="margin-top: 10px;width:50%;margin-left:25%;height: auto;">
+   <i class="fa fa-trash" aria-hidden="true"></i><br>
    <img src="https://placeimg.com/40/40/people" style="border-radius: 50%;">
   {{ topic.value }} 
   </li>

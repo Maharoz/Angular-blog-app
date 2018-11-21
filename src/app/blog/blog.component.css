@@ -1,5 +1,4 @@
-.form-control{
-  
+.form-control{ 
 padding: 10px;
 }
 
@@ -19,4 +18,10 @@ padding: 10px;
 
 .img-settings-prop{
     margin-left: 43%;
+}
+
+.fa-trash{
+    color: red;
+    font-size: 20px;
+    margin-left: 97%;
 }
