@@ -47,7 +47,7 @@
   {{ topic.value }} <br>
 
   
-  <p style="color:red ; font-family: sans-serif;font-size: 20px" *ngIf="isFavorite" (click)="onClickLove(topic)">Love</p>
+  <p class ="test" style="color:red ; font-family: sans-serif;font-size: 20px" *ngIf="isFavorite" (click)="onClickLove(topic)">Love</p>
   <div style="width: 55px;">
     <p style="color:white ; font-family: sans-serif;font-size: 20px;background-color: red;" *ngIf="!isFavorite" (click)="onClickLove(topic)">Loved</p>
   </div>
